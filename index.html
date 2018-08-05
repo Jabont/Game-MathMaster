@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Master</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Math Master">
+
+	<link rel="apple-touch-icon" href="life.png" >
+	<meta name="msapplication-starturl" content="latest?launchedTest" />
+</head>
+<body>
+	<section id="game">
+		<div id="home" class="page">
+			<inner>
+				<img src="char2.gif" id="game_logo">
+				<h1 id="game_name">Math Master</h1>
+				<input type="tel" id="game_number" value="3"><br>
+				<button id="game_start" onclick="startGame()">
+					Let's Play!
+				</button>
+			</inner>
+		</div>
+		<div id="play" class="page">
+			<div id="play_map">
+				<div id="monster">
+				</div>
+				<master id="m" x="3">
+					<img src="char2.gif" class="master-pic"> 
+				</master>
+				<joy>
+					<button class="joy left" onclick="walk(-1)" id="btn_left">&lt;</button>
+					<button class="joy right" onclick="walk(1)" id="btn_right">&gt;</button>
+				</joy>
+
+			</div>
+			<div id="play_control">
+				<h1>
+					SCORE : <span id="thescore">0</span>
+				</h1>
+
+				<h2 id="thelife">
+					<img src="life.png" class="life">
+					<img src="life.png" class="life">
+					<img src="life.png" class="life">
+					<img src="life.png" class="life">
+					<img src="life.png" class="life">
+				</h2>
+				
+			</div>
+		</div>
+	</section>
+
+	<script src="game.js"></script>
+</body>
+</html>
